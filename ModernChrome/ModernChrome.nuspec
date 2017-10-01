@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+
+<package>
+  <metadata>
+    <id>ModernChrome</id>
+    <title>Modern Chrome</title>
+    <version>1.0.0-alpha001</version>
+    <authors>Christian Ivicevic</authors>
+    <owners>civicevic</owners>
+    <licenseUrl>https://github.com/ChristianIvicevic/ModernChrome/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/ChristianIvicevic/ModernChrome</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Modern Chrome is a library for .NET WPF applications that provides a custom ModernWindow base class for windows that mimics the look of Visual Studio 2017 with a custom chrome and glowing borders. The library does NOT (at least not yet...) provide styles and control templates for general controls and only styles the base window and its chrome.</description>
+    <summary>Visual Studio Modern WPF Theme</summary>
+    <releaseNotes />
+    <copyright>Copyright (c) 2017 Christian Ivicevic</copyright>
+    <tags>WPF Theme Modern ModernUI Metro MetroUI VisualStudio XAML UI .NET Toolkit</tags>
+    <dependencies>
+      <dependency id="Expression.Blend.Sdk.WPF" version="1.0.1" />
+      <dependency id="MahApps.Metro" version="[1.6.0-alpha0128, 1.6.0]" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="bin\Release\net45\ModernChrome.dll" target="lib\net45\ModernChrome.dll" />
+    <file src="bin\Release\net45\ModernChrome.pdb" target="lib\net45\ModernChrome.pdb" />
+    <file src="bin\Release\net45\ModernChrome.xml" target="lib\net45\ModernChrome.xml" />
+    <file src="bin\Release\net47\ModernChrome.dll" target="lib\net47\ModernChrome.dll" />
+    <file src="bin\Release\net47\ModernChrome.pdb" target="lib\net47\ModernChrome.pdb" />
+    <file src="bin\Release\net47\ModernChrome.xml" target="lib\net47\ModernChrome.xml" />
+  </files>
+</package>

@@ -67,6 +67,26 @@ namespace ModernChrome.Sample
 }
 ```
 
+## Optional Quality of Life tweaks
+
+1. Since this library is dependendant on the *Microsoft.Expression.Interactions* library from the Expression Blend SDK you might get a bunch of localization folders in your project output. I suggest going into your project properties under **Build Events** and adding the following **post-build event command line** to be executed **On successful build** (adjust as necessary if you happen to have either more or less folders):
+```
+RMDIR "$(TargetDir)en/" /S /Q
+RMDIR "$(TargetDir)es/" /S /Q 
+RMDIR "$(TargetDir)fr/" /S /Q
+RMDIR "$(TargetDir)it/" /S /Q
+RMDIR "$(TargetDir)ja/" /S /Q
+RMDIR "$(TargetDir)ko/" /S /Q
+RMDIR "$(TargetDir)ru/" /S /Q
+RMDIR "$(TargetDir)zh-Hans/" /S /Q
+RMDIR "$(TargetDir)zh-Hant/" /S /Q
+```
+2. Currently the library is dependent on alpha builds of *MahApps.Metro* and you will most likely get the following NuGet warning:
+```
+NU1602 MahApps.Metro 1.6.0-alpha0XXX does not provide an inclusive lower bound for dependency ControlzEx (> 3.0.2 && < 4.0.0). An approximate best match of ControlzEx 3.X.X.X was resolved.
+```
+Until this gets fixed by the developer of *MahApps.Metro* you can supress this warning by going to your project properties and adding `NU1602` under **Build** and **Suppress warnings**.
+
 ## Customizations
 
 ### Themes
@@ -139,8 +159,11 @@ Usually a window enables or disables those buttons depending on the value of `Wi
 
 # Dependencies
 The library does not reinvent the wheel, it only combines and strips the functionality of the following available packages:
+* [ControlzEx](https://github.com/ControlzEx/ControlzEx)
 * [Expression.Blend.Sdk.WPF](https://www.nuget.org/packages/Expression.Blend.Sdk.WPF/)
 * [MahApps.Metro](https://github.com/MahApps/MahApps.Metro)
+
+It is highly recommended to switch the default package management format of NuGet to `PackageReference` in order to reduce clutter and collisions with other projects.
 
 *MetroChrome* reuses the `BorderlessWindowBehavior` and a customized `GlowWindowBehavior` from the *MahApps.Metro* library to provide a window that can be easily resized and handled using AeroSnap and has a glowing border.
 
