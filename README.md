@@ -3,6 +3,14 @@
 
 #
 
+<div align="center">
+	<a href="https://www.nuget.org/packages/ModernChrome/">
+		<img src="https://img.shields.io/badge/nuget-1.0.0--alpha001-blue.svg?style=flat-square">
+	</a>
+</div>
+
+# Description
+
 Modern Chrome is a library for .NET WPF applications that provides a custom `ModernWindow` base class for windows that mimics the look of Visual Studio 2017 with a custom chrome and glowing borders. The library does **NOT** *(at least not yet...)* provide styles and control templates for general controls and only styles the base window and its chrome.
 
 # Screenshots
@@ -35,7 +43,7 @@ Follow this short guide on getting started quickly - **it is HIGHLY suggested to
 
 ## Setting up the project
 
-1. Since there is no *ModernChrome* NuGet package yet, you have to download the project from the repository and add it to your solution as well as a reference to it.
+1. Download the source from the repository or download the [NuGet package](https://www.nuget.org/packages/ModernChrome/) via the package manager.
 2. In your `App.xaml` of your main application you have to add one of the available theme `ResourceDictionaries` with the following snippet while picking one of the available themes (IntelliSense will provide support for selecting a theme and you can either select `LightBlue.xaml`, `DarkBlue.xaml`, `Light.xaml`, `Dark.xaml` or `Blend.xaml`):
 ```xaml
 <ResourceDictionary>
