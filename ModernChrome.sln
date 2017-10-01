@@ -3,9 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModernChrome", "ModernChrome\ModernChrome.csproj", "{EF9ABD47-F09C-4DFD-8933-32196A90629E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModernChrome.NET45", "ModernChrome\ModernChrome.NET45.csproj", "{EF9ABD47-F09C-4DFD-8933-32196A90629E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModernChrome.Sample", "ModernChrome.Sample\ModernChrome.Sample.csproj", "{BE29AD44-E6E7-456D-9586-C8CED83C8EB8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModernChrome.Sample.NET47", "ModernChrome.Sample\ModernChrome.Sample.NET47.csproj", "{BE29AD44-E6E7-456D-9586-C8CED83C8EB8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ModernChrome", "ModernChrome", "{BCE3CCA9-6C07-4FCF-8CC8-AA6421E2D25C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModernChrome.NET47", "ModernChrome\ModernChrome.NET47.csproj", "{2DD68E07-20D5-4BDE-94AA-3B7ECD844524}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ModernChrome.Sample", "ModernChrome.Sample", "{CA5C20C6-F9EB-4779-87B7-E2F7B462BCC1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModernChrome.Sample.NET45", "ModernChrome.Sample\ModernChrome.Sample.NET45.csproj", "{CAD144BB-2D6C-4B81-8893-91459F98F73A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,9 +29,23 @@ Global
 		{BE29AD44-E6E7-456D-9586-C8CED83C8EB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE29AD44-E6E7-456D-9586-C8CED83C8EB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE29AD44-E6E7-456D-9586-C8CED83C8EB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DD68E07-20D5-4BDE-94AA-3B7ECD844524}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DD68E07-20D5-4BDE-94AA-3B7ECD844524}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DD68E07-20D5-4BDE-94AA-3B7ECD844524}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DD68E07-20D5-4BDE-94AA-3B7ECD844524}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAD144BB-2D6C-4B81-8893-91459F98F73A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAD144BB-2D6C-4B81-8893-91459F98F73A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAD144BB-2D6C-4B81-8893-91459F98F73A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAD144BB-2D6C-4B81-8893-91459F98F73A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EF9ABD47-F09C-4DFD-8933-32196A90629E} = {BCE3CCA9-6C07-4FCF-8CC8-AA6421E2D25C}
+		{BE29AD44-E6E7-456D-9586-C8CED83C8EB8} = {CA5C20C6-F9EB-4779-87B7-E2F7B462BCC1}
+		{2DD68E07-20D5-4BDE-94AA-3B7ECD844524} = {BCE3CCA9-6C07-4FCF-8CC8-AA6421E2D25C}
+		{CAD144BB-2D6C-4B81-8893-91459F98F73A} = {CA5C20C6-F9EB-4779-87B7-E2F7B462BCC1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E087DAE5-41A7-4255-B2DD-8E9E524B1627}
