@@ -1,5 +1,5 @@
 
-![Modern Chrome Logo](Logo.png)
+![Modern Chrome Logo](ModernChromeLogo.png)
 
 #
 
