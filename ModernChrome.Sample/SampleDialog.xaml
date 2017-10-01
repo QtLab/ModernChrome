@@ -1,0 +1,27 @@
+﻿<modern:ModernWindow x:Class="ModernChrome.Sample.SampleDialog"
+                     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                     xmlns:modern="clr-namespace:ModernChrome;assembly=ModernChrome"
+                     mc:Ignorable="d"
+                     Title="Sample Dialog" Height="140" Width="400"
+                     ShowCaptionIcon="False" ShowStatusBar="False"
+                     WindowStartupLocation="CenterOwner"
+                     Background="White" ResizeMode="NoResize" ShowCloseButton="False">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="32" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Padding="0" Margin="10,6,10,0" FontSize="15" Foreground="#003399">Performing really important stuff...</Label>
+        <ProgressBar Grid.Row="1" Margin="10,8,10,8" IsIndeterminate="True" />
+        <Grid Grid.Row="2" Background="#f0f0f0">
+            <Button VerticalAlignment="Center" HorizontalAlignment="Right" Margin="10" Padding="12,3,12,3"
+                    Click="CloseWindow">
+                Close Window
+            </Button>
+        </Grid>
+    </Grid>
+</modern:ModernWindow>
